@@ -136,9 +136,9 @@ function displayResult(){
         alert("Plese Input a valid number")
     }
 
-    // else if (inputValue = ""){
-    //     alert("Please Enter a number")
-    // }
+    else if (inputValue === ""){
+        alert("Please Enter a number")
+    }
     converter(inputValue)
 
     var body = document.getElementsByTagName("body")[0];
@@ -172,5 +172,4 @@ function displayResult(){
     var textNode = para.textContent = "Total  "+"#" + inputValue;
     var total = document.getElementById("total")
     total.appendChild(para);
-    
 }
